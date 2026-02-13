@@ -397,59 +397,6 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* NEW SECTION: AFTER CLICK */}
-      <Section>
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">O que acontece depois que eu clico no botão " Comprar agora " do Java Burn Coffee?</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Após clicar no botão “ Comprar agora ”, logo abaixo deste texto, você será redirecionado para a página de pagamento segura. Basta inserir suas informações e você terá acesso imediato ao café Java Burn.
-          </p>
-          <div className="max-w-sm mx-auto mb-12">
-            <img 
-              src="https://javaburnn-coffee.com/assets/images/javaburncoffee-secure-payment.jpg-614x820.jpg" 
-              alt="Secure Payment" 
-              className="w-full h-auto rounded-xl shadow-lg"
-            />
-          </div>
-          
-          <div className="text-left space-y-8 text-gray-700">
-            <div>
-              <h3 className="text-xl font-bold mb-3">Trata-se de um pagamento único?</h3>
-              <p>
-                Sim. O produto de café Java Burn é uma transação única processada pelo nosso parceiro de pagamentos confiável, o Clickbank. O pagamento é seguro e utiliza a mesma tecnologia de criptografia do Clickbank e dos bancos online. Você nunca será cobrado por nada além do seu consentimento e não há absolutamente nenhum custo oculto.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-3">Preços do café Java Burn e como comprar</h3>
-              <p className="mb-4">O Java Burn está disponível apenas em seu site oficial.</p>
-              <ul className="list-disc pl-5 space-y-2 font-medium">
-                <li>Pacote com 1 frasco de café Java Burn: US$ 59 + frete.</li>
-                <li>Pacote com 3 frascos de café Java Burn: US$ 49 + frete grátis e rápido.</li>
-                <li>Pacote com 6 frascos de café Java Burn: US$ 39 + frete grátis e rápido.</li>
-              </ul>
-              <p className="mt-4">
-                Pode haver uma pequena taxa de envio para pedidos de frascos de Java Burn. A empresa oferece garantia de satisfação de 90 dias. Portanto, se o Java Burn não atender às suas expectativas, você pode solicitar um reembolso total. O suplemento alimentar Java Burn é um investimento seguro para uma vida saudável.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-3">Quão seguras estão as informações do meu cartão de crédito no seu site?</h3>
-              <p>
-                Sua privacidade online é uma das nossas maiores prioridades, portanto, não se preocupe com a perda de informações confidenciais ao fazer seu pedido de café Java Burn conosco. Além disso, você pode confiar na excelente reputação e vasta experiência da Clickbank em transações online para garantir a segurança da sua compra.
-              </p>
-            </div>
-
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-              <h3 className="text-xl font-bold mb-3">Política de reembolso:</h3>
-              <p>
-                Se, nos primeiros 60 dias após o recebimento, você não estiver satisfeito com o JavaBurn Coffee, poderá solicitar um reembolso enviando um e-mail para o endereço fornecido dentro da embalagem do produto e reembolsaremos imediatamente o valor total da sua compra, sem perguntas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section>
-
       {/* NEW SECTION: AFTER FAQ */}
       <Section className="bg-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -500,25 +447,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
-      </Section>
-
-      {/* FINAL CTA SECTION */}
-      <Section className="bg-black text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 font-display">Não espere mais! Peça já sua garrafa de Java Burn com desconto!</h2>
-          <div className="max-w-xl mx-auto mb-10">
-            <img 
-              src="https://javaburnn-coffee.com/assets/images/javaburncoffee-best-price.png-1241x1156.png" 
-              alt="Best Price Offer" 
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="space-y-4 mb-10">
-            <p className="text-xl line-through opacity-60">Preço normal do JavaBurn: US$ 197 por garrafa</p>
-            <p className="text-4xl font-black text-[#FFD814]">Apenas por: US$ 49 por garrafa</p>
-          </div>
-          <CtaButton size="xl" text="RESGATE SEUS DESCONTOS AGORA" location="final_cta" />
         </div>
       </Section>
 
