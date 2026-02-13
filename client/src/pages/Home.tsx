@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, AlertCircle, X, Check, Flame, Battery, Brain, Scale, Coffee, ShieldCheck, ChevronDown, ChevronUp } from "lucide-react";
-import { useTrackEvent } from "@/hooks/use-analytics";
+import { cn } from "@/lib/utils";
 import { CtaButton } from "@/components/CtaButton";
 import { Section, SectionHeader } from "@/components/Section";
 import { ReviewCard } from "@/components/ReviewCard";
@@ -58,12 +58,6 @@ const ComparisonRow = ({ label, javaBurn, generic }: { label: string, javaBurn: 
 );
 
 export default function Home() {
-  const { mutate: track } = useTrackEvent();
-
-  useEffect(() => {
-    track({ event_type: "view", location: "home" });
-  }, []);
-
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },

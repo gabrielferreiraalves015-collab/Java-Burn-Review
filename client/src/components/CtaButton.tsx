@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { useTrackEvent } from "@/hooks/use-analytics";
 
 interface CtaButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -19,13 +18,9 @@ export function CtaButton({
   location = "unknown",
   ...props 
 }: CtaButtonProps) {
-  const { mutate: track } = useTrackEvent();
-
+  
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    track({ event_type: "click_cta", location });
     props.onClick?.(e);
-    // In a real scenario, this would link to the affiliate offer
-    window.open("https://javaburnn-coffee.com", "_blank");
   };
 
   const sizeClasses = {
