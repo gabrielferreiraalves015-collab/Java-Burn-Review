@@ -172,7 +172,7 @@ export default function Home() {
       </Section>
 
       {/* 4. HOW IT WORKS */}
-      <Section className="bg-[#002B5C] text-white">
+      <Section className="bg-[#0a0a0a] text-white">
         <SectionHeader title="Como Funciona" subtitle="Simples, Rápido e Eficaz" center={true} />
         <div className="grid md:grid-cols-4 gap-8 relative">
           {/* Connector Line */}
@@ -192,7 +192,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative z-10 text-center"
             >
-              <div className="w-24 h-24 mx-auto bg-white text-[#002B5C] rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-[#FFD814]">
+              <div className="w-24 h-24 mx-auto bg-white text-[#0a0a0a] rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-[#FFD814]">
                 {item.step}
               </div>
               <h3 className="text-xl font-bold mb-3 text-[#FFD814]">{item.title}</h3>
@@ -301,7 +301,7 @@ export default function Home() {
       </Section>
 
       {/* 9. REVIEWS */}
-      <Section dark className="bg-[#002B5C]">
+      <Section dark className="bg-[#0a0a0a]">
         <SectionHeader title="O que dizem os clientes?" subtitle="Baseado em relatos reais" center={true} />
         <div className="grid md:grid-cols-3 gap-8">
           <ReviewCard 
