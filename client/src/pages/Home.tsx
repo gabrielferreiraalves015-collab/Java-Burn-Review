@@ -65,7 +65,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#333333]">
+    <div className="min-h-screen bg-white font-sans text-[#333333] text-xl">
       
       {/* 1. HERO SECTION */}
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
@@ -77,8 +77,7 @@ export default function Home() {
               Análise 2024 Atualizada
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold text-black leading-[1.1] mb-6 font-display">
-              Review Java Burn <br />
-              <span className="text-[#002B5C]">Análise Completa</span>
+              Review Java Burn
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
               Tudo que você precisa saber antes de decidir se este é o suplemento certo para você.
@@ -171,37 +170,8 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 4. HOW IT WORKS */}
-      <Section className="bg-[#0a0a0a] text-white">
-        <SectionHeader title="Como Funciona" subtitle="Simples, Rápido e Eficaz" center={true} />
-        <div className="grid md:grid-cols-4 gap-8 relative">
-          {/* Connector Line */}
-          <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-white/20 -z-0" />
-          
-          {[
-            { step: "01", title: "Misture", desc: "Adicione um sachê de Java Burn ao seu café matinal." },
-            { step: "02", title: "Ative", desc: "A fórmula se dissolve instantaneamente e sem sabor." },
-            { step: "03", title: "Acelere", desc: "Seu metabolismo entra em modo de queima de gordura." },
-            { step: "04", title: "Queime", desc: "Desfrute de energia o dia todo enquanto seu corpo trabalha." }
-          ].map((item, idx) => (
-            <motion.div 
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              viewport={{ once: true }}
-              className="relative z-10 text-center"
-            >
-              <div className="w-24 h-24 mx-auto bg-white text-[#0a0a0a] rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-[#FFD814]">
-                {item.step}
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-[#FFD814]">{item.title}</h3>
-              <p className="text-white/80 leading-relaxed">{item.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
-
+      {/* 4. HOW IT WORKS -> Moved and renamed to HOW TO USE */}
+      
       {/* 5. INGREDIENTS */}
       <Section>
         <SectionHeader title="Ingredientes Poderosos" subtitle="Prova técnica da eficácia" />
@@ -233,6 +203,37 @@ export default function Home() {
               <p className="text-sm text-gray-500 mt-4 italic">Nota: Resultados variam e dependem de hábitos e sensibilidade individual.</p>
             </div>
           </div>
+        </div>
+      </Section>
+
+      {/* HOW TO USE (formerly HOW IT WORKS) */}
+      <Section className="bg-white">
+        <SectionHeader title="Como Usar" subtitle="Simples, Rápido e Eficaz" center={true} />
+        <div className="grid md:grid-cols-4 gap-8 relative">
+          {/* Connector Line */}
+          <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-200 -z-0" />
+          
+          {[
+            { step: "01", title: "Misture", desc: "Adicione um sachê de Java Burn ao seu café matinal." },
+            { step: "02", title: "Ative", desc: "A fórmula se dissolve instantaneamente e sem sabor." },
+            { step: "03", title: "Acelere", desc: "Seu metabolismo entra em modo de queima de gordura." },
+            { step: "04", title: "Queime", desc: "Desfrute de energia o dia todo enquanto seu corpo trabalha." }
+          ].map((item, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.1 }}
+              viewport={{ once: true }}
+              className="relative z-10 text-center"
+            >
+              <div className="w-24 h-24 mx-auto bg-white text-black rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-4 border-[#FFD814]">
+                {item.step}
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-[#002B5C]">{item.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </Section>
 
@@ -301,7 +302,7 @@ export default function Home() {
       </Section>
 
       {/* 9. REVIEWS */}
-      <Section dark className="bg-[#0a0a0a]">
+      <Section className="bg-white">
         <SectionHeader title="O que dizem os clientes?" subtitle="Baseado em relatos reais" center={true} />
         <div className="grid md:grid-cols-3 gap-8">
           <ReviewCard 
@@ -339,13 +340,13 @@ export default function Home() {
             />
           </div>
 
-          <div className="max-w-2xl mx-auto mb-10 bg-orange-100 border-2 border-black p-6 rounded-xl text-left">
-            <p className="text-lg font-bold text-black">
+          <CtaButton size="xl" text="Escolha sua oferta oficial com desconto" location="pricing" />
+
+          <div className="max-w-2xl mx-auto mt-10 bg-orange-100 border-2 border-black p-6 rounded-xl text-left">
+            <p className="text-lg font-bold text-black text-center">
               <span className="text-red-600">ATENÇÃO:</span> Os estoques do sérum Java Burn são limitados. Garanta já o seu produto reservado antes que o desconto expire!
             </p>
           </div>
-          
-          <CtaButton size="xl" text="Escolha sua oferta oficial com desconto" location="pricing" />
         </div>
       </Section>
 
@@ -453,7 +454,7 @@ export default function Home() {
       {/* FINAL CTA SECTION */}
       <Section className="bg-black text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 font-display">Não espere mais! Peça já sua garrafa de Java Burn com desconto!</h2>
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 font-display text-white">Não espere mais! Peça já sua garrafa de Java Burn com desconto!</h2>
           <div className="max-w-xl mx-auto mb-10">
             <img 
               src="https://javaburnn-coffee.com/assets/images/javaburncoffee-best-price.png-1241x1156.png" 
