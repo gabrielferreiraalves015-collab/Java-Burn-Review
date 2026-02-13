@@ -93,16 +93,21 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative flex justify-center"
+            className="relative flex flex-col items-center"
           >
-            {/* Descriptive alt text for accessibility and fallback */}
-            <div className="relative z-10 w-full max-w-md aspect-square rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
-              <img src="/images/hero-coffee.png" alt="Java Burn Product" className="w-full h-full object-cover" />
-              
-              {/* Badge Overlay */}
-              <div className="absolute -top-6 -right-6 bg-[#002B5C] text-white w-24 h-24 rounded-full flex items-center justify-center font-bold text-center shadow-lg rotate-12 border-4 border-white">
-                <span className="text-sm leading-tight">100%<br/>Natural</span>
-              </div>
+            <div className="relative z-10 w-full max-w-lg aspect-[800/701] rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
+              <img 
+                src="https://javaburnn-coffee.com/assets/images/java-burn-coffee.jpg-800x701.jpg" 
+                alt="Java Burn Product" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="mt-6 w-full max-w-md">
+              <img 
+                src="https://javaburnn-coffee.com/assets/images/certified-2024x296.png" 
+                alt="Certified" 
+                className="w-full h-auto" 
+              />
             </div>
             
             {/* Decorative background blob */}
@@ -325,25 +330,19 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 font-display">
             Oferta Especial Limitada
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Aproveite os pacotes com <span className="text-green-600 font-bold bg-green-100 px-2 rounded">Frete Grátis</span> e descontos exclusivos para novos clientes.
-          </p>
           
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-            <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm w-full md:w-64">
-              <div className="text-gray-500 font-bold mb-2">1 Pacote</div>
-              <div className="text-3xl font-extrabold">$69<span className="text-sm font-normal">/cada</span></div>
-            </div>
-            <div className="bg-white p-6 rounded-xl border-2 border-[#FFD814] shadow-lg transform md:-translate-y-4 w-full md:w-64 relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FFD814] text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Mais Popular</div>
-              <div className="text-gray-800 font-bold mb-2">3 Pacotes</div>
-              <div className="text-3xl font-extrabold">$49<span className="text-sm font-normal">/cada</span></div>
-              <div className="text-green-600 text-sm mt-2 font-bold">Economize $444</div>
-            </div>
-            <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm w-full md:w-64">
-              <div className="text-gray-500 font-bold mb-2">6 Pacotes</div>
-              <div className="text-3xl font-extrabold">$39<span className="text-sm font-normal">/cada</span></div>
-            </div>
+          <div className="max-w-4xl mx-auto mb-10">
+            <img 
+              src="https://javaburnn-coffee.com/assets/images/java-burn-coffee-price.jpg-1140x856.jpg" 
+              alt="Java Burn Offers" 
+              className="w-full h-auto rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <div className="max-w-2xl mx-auto mb-10 bg-orange-100 border-2 border-black p-6 rounded-xl text-left">
+            <p className="text-lg font-bold text-black">
+              <span className="text-red-600">ATENÇÃO:</span> Os estoques do sérum Java Burn são limitados. Garanta já o seu produto reservado antes que o desconto expire!
+            </p>
           </div>
           
           <CtaButton size="xl" text="Escolha sua oferta oficial com desconto" location="pricing" />
@@ -351,25 +350,25 @@ export default function Home() {
       </Section>
 
       {/* 11. GUARANTEE */}
-      <Section>
-        <div className="bg-gradient-to-r from-[#002B5C] to-[#001f42] rounded-2xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center gap-8 shadow-2xl relative overflow-hidden">
-          {/* Shine effect */}
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 translate-x-full animate-shimmer" />
-          
-          <div className="shrink-0 bg-white/10 p-4 rounded-full border-2 border-[#FFD814]">
-            <ShieldCheck className="w-20 h-20 text-[#FFD814]" />
+      <Section className="bg-black text-white">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
+          <div className="mb-8 w-48 h-48">
+            <img 
+              src="https://javaburnn-coffee.com/assets/images/satisfaction-guaranteed-600x608.png" 
+              alt="Satisfaction Guaranteed" 
+              className="w-full h-full object-contain"
+            />
           </div>
-          <div className="flex-1 text-center md:text-left">
-            <h3 className="text-3xl font-bold mb-4 font-display">Garantia Blindada de 60 Dias</h3>
-            <p className="text-blue-100 text-lg leading-relaxed mb-6">
-              Se você não ver os resultados que espera, ou se não ficar satisfeito por qualquer motivo, você recebe 100% do seu dinheiro de volta. Sem perguntas. É um processo simples e seguro.
+          <h3 className="text-3xl font-bold mb-6 font-display">Garantia de reembolso de 60 dias do Java Burn™</h3>
+          <div className="text-lg leading-relaxed mb-10 space-y-4 max-w-2xl">
+            <p>
+              O suplemento Java Burn estará disponível para você testar por dois meses. Caso esteja entre os 0,5% que não ficarem satisfeitos, poderá solicitar o reembolso TOTAL.
             </p>
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-bold text-[#FFD814]">
-              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4" /> Reembolso Total</span>
-              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4" /> Compra Segura</span>
-              <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4" /> Risco Zero</span>
-            </div>
+            <p className="font-medium text-blue-200">
+              Considere isso um período de teste, caso as coisas não corram como esperado. O Java Burn pode funcionar. Se não funcionar, você pode pedir seu dinheiro de volta.
+            </p>
           </div>
+          <CtaButton size="xl" text=">> Pegue sua garrafa e veja por si mesmo" location="guarantee" />
         </div>
       </Section>
 
@@ -395,6 +394,150 @@ export default function Home() {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+      </Section>
+
+      {/* NEW SECTION: AFTER CLICK */}
+      <Section>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">O que acontece depois que eu clico no botão " Comprar agora " do Java Burn Coffee?</h2>
+          <p className="text-lg text-gray-700 mb-8">
+            Após clicar no botão “ Comprar agora ”, logo abaixo deste texto, você será redirecionado para a página de pagamento segura. Basta inserir suas informações e você terá acesso imediato ao café Java Burn.
+          </p>
+          <div className="max-w-sm mx-auto mb-12">
+            <img 
+              src="https://javaburnn-coffee.com/assets/images/javaburncoffee-secure-payment.jpg-614x820.jpg" 
+              alt="Secure Payment" 
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
+          </div>
+          
+          <div className="text-left space-y-8 text-gray-700">
+            <div>
+              <h3 className="text-xl font-bold mb-3">Trata-se de um pagamento único?</h3>
+              <p>
+                Sim. O produto de café Java Burn é uma transação única processada pelo nosso parceiro de pagamentos confiável, o Clickbank. O pagamento é seguro e utiliza a mesma tecnologia de criptografia do Clickbank e dos bancos online. Você nunca será cobrado por nada além do seu consentimento e não há absolutamente nenhum custo oculto.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">Preços do café Java Burn e como comprar</h3>
+              <p className="mb-4">O Java Burn está disponível apenas em seu site oficial.</p>
+              <ul className="list-disc pl-5 space-y-2 font-medium">
+                <li>Pacote com 1 frasco de café Java Burn: US$ 59 + frete.</li>
+                <li>Pacote com 3 frascos de café Java Burn: US$ 49 + frete grátis e rápido.</li>
+                <li>Pacote com 6 frascos de café Java Burn: US$ 39 + frete grátis e rápido.</li>
+              </ul>
+              <p className="mt-4">
+                Pode haver uma pequena taxa de envio para pedidos de frascos de Java Burn. A empresa oferece garantia de satisfação de 90 dias. Portanto, se o Java Burn não atender às suas expectativas, você pode solicitar um reembolso total. O suplemento alimentar Java Burn é um investimento seguro para uma vida saudável.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">Quão seguras estão as informações do meu cartão de crédito no seu site?</h3>
+              <p>
+                Sua privacidade online é uma das nossas maiores prioridades, portanto, não se preocupe com a perda de informações confidenciais ao fazer seu pedido de café Java Burn conosco. Além disso, você pode confiar na excelente reputação e vasta experiência da Clickbank em transações online para garantir a segurança da sua compra.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+              <h3 className="text-xl font-bold mb-3">Política de reembolso:</h3>
+              <p>
+                Se, nos primeiros 60 dias após o recebimento, você não estiver satisfeito com o JavaBurn Coffee, poderá solicitar um reembolso enviando um e-mail para o endereço fornecido dentro da embalagem do produto e reembolsaremos imediatamente o valor total da sua compra, sem perguntas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* NEW SECTION: AFTER FAQ */}
+      <Section className="bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">O que acontece depois que eu clico no botão " Comprar agora " do Java Burn Coffee?</h2>
+          <p className="text-lg text-gray-700 mb-8">
+            Após clicar no botão “ Comprar agora ”, logo abaixo deste texto, você será redirecionado para a página de pagamento segura. Basta inserir suas informações e você terá acesso imediato ao café Java Burn.
+          </p>
+          <div className="max-w-sm mx-auto mb-12">
+            <img 
+              src="https://javaburnn-coffee.com/assets/images/javaburncoffee-secure-payment.jpg-614x820.jpg" 
+              alt="Secure Payment" 
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
+          </div>
+          
+          <div className="text-left space-y-8 text-gray-700">
+            <div>
+              <h3 className="text-xl font-bold mb-3">Trata-se de um pagamento único?</h3>
+              <p>
+                Sim. O produto de café Java Burn é uma transação única processada pelo nosso parceiro de pagamentos confiável, o Clickbank. O pagamento é seguro e utiliza a mesma tecnologia de criptografia do Clickbank e dos bancos online. Você nunca será cobrado por nada além do seu consentimento e não há absolutamente nenhum custo oculto.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">Preços do café Java Burn e como comprar</h3>
+              <p className="mb-4">O Java Burn está disponível apenas em seu site oficial.</p>
+              <ul className="list-disc pl-5 space-y-2 font-medium">
+                <li>Pacote com 1 frasco de café Java Burn: US$ 59 + frete.</li>
+                <li>Pacote com 3 frascos de café Java Burn: US$ 49 + frete grátis e rápido.</li>
+                <li>Pacote com 6 frascos de café Java Burn: US$ 39 + frete grátis e rápido.</li>
+              </ul>
+              <p className="mt-4">
+                Pode haver uma pequena taxa de envio para pedidos de frascos de Java Burn. A empresa oferece garantia de satisfação de 90 dias. Portanto, se o Java Burn não atender às suas expectativas, você pode solicitar um reembolso total. O suplemento alimentar Java Burn é um investimento seguro para uma vida saudável.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">Quão seguras estão as informações do meu cartão de crédito no seu site?</h3>
+              <p>
+                Sua privacidade online é uma das nossas maiores prioridades, portanto, não se preocupe com a perda de informações confidenciais ao fazer seu pedido de café Java Burn conosco. Além disso, você pode confiar na excelente reputação e vasta experiência da Clickbank em transações online para garantir a segurança da sua compra.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+              <h3 className="text-xl font-bold mb-3">Política de reembolso:</h3>
+              <p>
+                Se, nos primeiros 60 dias após o recebimento, você não estiver satisfeito com o JavaBurn Coffee, poderá solicitar um reembolso enviando um e-mail para o endereço fornecido dentro da embalagem do produto e reembolsaremos imediatamente o valor total da sua compra, sem perguntas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* FINAL CTA SECTION */}
+      <Section className="bg-black text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 font-display">Não espere mais! Peça já sua garrafa de Java Burn com desconto!</h2>
+          <div className="max-w-xl mx-auto mb-10">
+            <img 
+              src="https://javaburnn-coffee.com/assets/images/javaburncoffee-best-price.png-1241x1156.png" 
+              alt="Best Price Offer" 
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="space-y-4 mb-10">
+            <p className="text-xl line-through opacity-60">Preço normal do JavaBurn: US$ 197 por garrafa</p>
+            <p className="text-4xl font-black text-[#FFD814]">Apenas por: US$ 49 por garrafa</p>
+          </div>
+          <CtaButton size="xl" text="RESGATE SEUS DESCONTOS AGORA" location="final_cta" />
+        </div>
+      </Section>
+
+      {/* FINAL CTA SECTION */}
+      <Section className="bg-black text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 font-display">Não espere mais! Peça já sua garrafa de Java Burn com desconto!</h2>
+          <div className="max-w-xl mx-auto mb-10">
+            <img 
+              src="https://javaburnn-coffee.com/assets/images/javaburncoffee-best-price.png-1241x1156.png" 
+              alt="Best Price Offer" 
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="space-y-4 mb-10">
+            <p className="text-xl line-through opacity-60">Preço normal do JavaBurn: US$ 197 por garrafa</p>
+            <p className="text-4xl font-black text-[#FFD814]">Apenas por: US$ 49 por garrafa</p>
+          </div>
+          <CtaButton size="xl" text="RESGATE SEUS DESCONTOS AGORA" location="final_cta" />
         </div>
       </Section>
 
