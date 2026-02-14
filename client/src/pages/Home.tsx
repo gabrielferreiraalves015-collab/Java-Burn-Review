@@ -348,7 +348,7 @@ export default function Home() {
               className="w-full h-full object-contain"
             />
           </div>
-          <h3 className="text-3xl font-bold mb-6 font-display">Garantia de reembolso de 60 dias do Java Burn™</h3>
+          <h3 className="font-bold mb-6 font-display text-[#ffffff] text-[39px]">Garantia de reembolso de 60 dias do Java Burn™</h3>
           <div className="text-lg leading-relaxed mb-10 space-y-4 max-w-2xl">
             <p>
               O suplemento Java Burn estará disponível para você testar por dois meses. Caso esteja entre os 0,5% que não ficarem satisfeitos, poderá solicitar o reembolso TOTAL.
