@@ -67,20 +67,22 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white font-sans text-[#333333] text-xl">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-yellow-50 to-transparent -z-10" />
+      <section className="relative pt-12 pb-12 md:pt-32 md:pb-24 overflow-hidden">
+        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full bg-gradient-to-l from-yellow-50 to-transparent -z-10" />
         
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-          <motion.div {...fadeIn} className="text-left">
-            <div className="inline-block px-4 py-1.5 rounded-full font-bold text-sm mb-6 uppercase tracking-wider bg-[#ffffff] text-[#000000b0]">Updated 2026 Analysis</div>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-black leading-[1.1] mb-6 font-display">
+        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <motion.div {...fadeIn} className="text-center md:text-left order-2 md:order-1">
+            <div className="inline-block px-4 py-1.5 rounded-full font-bold text-xs md:text-sm mb-6 uppercase tracking-wider bg-white shadow-sm text-gray-600">Updated 2026 Analysis</div>
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-black leading-tight mb-6 font-display">
               Java Burn Review
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
+            <p className="text-lg md:text-2xl text-gray-600 mb-8 font-medium">
               Everything you need to know before deciding if this is the right supplement for you.
             </p>
-            <CtaButton size="xl" location="hero" text="Order Now" />
-            <p className="mt-4 text-sm text-gray-500 flex items-center gap-2">
+            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+              <CtaButton size="xl" location="hero" text="Order Now" />
+            </div>
+            <p className="mt-6 text-sm text-gray-500 flex items-center justify-center md:justify-start gap-2">
               <ShieldCheck className="w-4 h-4" /> Official Site verified and secure
             </p>
           </motion.div>
@@ -89,16 +91,16 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative flex flex-col items-center"
+            className="relative flex flex-col items-center order-1 md:order-2"
           >
-            <div className="relative z-10 w-full max-w-lg aspect-[800/701] rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
+            <div className="relative z-10 w-full max-w-[280px] sm:max-w-md md:max-w-lg aspect-[800/701] rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
               <img 
                 src="https://javaburnn-coffee.com/assets/images/java-burn-coffee.jpg-800x701.jpg" 
                 alt="Java Burn Product" 
                 className="w-full h-full object-cover" 
               />
             </div>
-            <div className="mt-6 w-full max-w-md">
+            <div className="mt-6 w-full max-w-[200px] sm:max-w-xs md:max-w-md">
               <img 
                 src="https://javaburnn-coffee.com/assets/images/certified-2024x296.png" 
                 alt="Certified" 
@@ -107,7 +109,7 @@ export default function Home() {
             </div>
             
             {/* Decorative background blob */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#FFD814]/20 rounded-full blur-3xl -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] bg-[#FFD814]/20 rounded-full blur-3xl -z-10" />
           </motion.div>
         </div>
       </section>
