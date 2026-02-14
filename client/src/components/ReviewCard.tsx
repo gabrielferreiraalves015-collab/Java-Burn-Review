@@ -18,7 +18,7 @@ export function ReviewCard({ name, location, content, rating = 5 }: ReviewCardPr
       </div>
       <p className="text-lg italic mb-6 leading-relaxed opacity-90">"{content}"</p>
       <div className="flex items-center gap-3 border-t border-white/20 pt-4">
-        <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-[#FFD814]">
+        <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-[#000000]">
           {name.charAt(0)}
         </div>
         <div>
