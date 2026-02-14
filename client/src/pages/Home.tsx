@@ -72,9 +72,7 @@ export default function Home() {
         
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <motion.div {...fadeIn} className="text-left">
-            <div className="inline-block bg-yellow-100 text-yellow-800 px-4 py-1.5 rounded-full font-bold text-sm mb-6 uppercase tracking-wider">
-              Análise 2024 Atualizada
-            </div>
+            <div className="inline-block px-4 py-1.5 rounded-full font-bold text-sm mb-6 uppercase tracking-wider bg-[#ffffff] text-[#000000b0]">Análise 2026 Atualizada</div>
             <h1 className="text-4xl md:text-6xl font-extrabold text-black leading-[1.1] mb-6 font-display">
               Review Java Burn
             </h1>
