@@ -66,7 +66,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white font-sans text-[#333333] text-xl">
-      
       {/* 1. HERO SECTION */}
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-yellow-50 to-transparent -z-10" />
@@ -114,7 +113,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* 2. DOES IT WORK? */}
       <Section className="bg-slate-50">
         <div className="grid md:grid-cols-12 gap-12 items-center">
@@ -152,7 +150,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* 3. BENEFITS */}
       <Section>
         <SectionHeader title="Principais Benefícios" subtitle="O que você pode esperar ao usar diariamente" />
@@ -169,9 +166,7 @@ export default function Home() {
           <CtaButton text="Ver todos os benefícios no site" location="benefits" />
         </div>
       </Section>
-
       {/* 4. HOW IT WORKS -> Moved and renamed to HOW TO USE */}
-      
       {/* 5. INGREDIENTS */}
       <Section>
         <SectionHeader title="Ingredientes Poderosos" subtitle="Prova técnica da eficácia" />
@@ -184,7 +179,6 @@ export default function Home() {
           <IngredientItem name="Chlorogenic Acid" desc="Composto encontrado no café verde que ajuda a reduzir a absorção de carboidratos." />
         </div>
       </Section>
-
       {/* 6. SIDE EFFECTS */}
       <Section className="bg-amber-50 border-y border-amber-100">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-start">
@@ -205,7 +199,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* HOW TO USE (formerly HOW IT WORKS) */}
       <Section className="bg-white">
         <SectionHeader title="Como Usar" subtitle="Simples, Rápido e Eficaz" center={true} />
@@ -236,7 +229,6 @@ export default function Home() {
           ))}
         </div>
       </Section>
-
       {/* 7. PROS & CONS */}
       <Section>
         <SectionHeader title="Prós e Contras" subtitle="Uma visão equilibrada" />
@@ -275,12 +267,11 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* 8. COMPARISON TABLE */}
       <Section className="bg-slate-50">
         <SectionHeader title="Comparativo" center={true} />
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-4xl mx-auto border border-gray-100">
-          <div className="grid grid-cols-3 bg-[#002B5C] text-white py-6 text-center font-bold text-lg md:text-xl">
+          <div className="grid grid-cols-3 text-white py-6 text-center font-bold text-lg md:text-xl bg-[#24272bde]">
             <div className="flex items-center justify-center pl-4 text-left md:text-center text-sm md:text-lg">Critério</div>
             <div className="flex flex-col items-center justify-center">
               <span>Java Burn</span>
@@ -300,7 +291,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* 9. REVIEWS */}
       <Section className="bg-white">
         <SectionHeader title="O que dizem os clientes?" subtitle="Baseado em relatos reais" center={true} />
@@ -322,7 +312,6 @@ export default function Home() {
           />
         </div>
       </Section>
-
       {/* 10. OFFER SPECIAL */}
       <Section>
         <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-8 md:p-16 text-center border border-yellow-200 shadow-xl relative overflow-hidden">
@@ -349,7 +338,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* 11. GUARANTEE */}
       <Section className="bg-black text-white">
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
@@ -372,7 +360,6 @@ export default function Home() {
           <CtaButton size="xl" text=">> Pegue sua garrafa e veja por si mesmo" location="guarantee" />
         </div>
       </Section>
-
       {/* 12. FAQ */}
       <Section className="bg-slate-50">
         <SectionHeader title="Perguntas Frequentes" center={true} />
@@ -397,7 +384,6 @@ export default function Home() {
           </Accordion>
         </div>
       </Section>
-
       {/* NEW SECTION: AFTER FAQ */}
       <Section className="bg-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -450,7 +436,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
       {/* FINAL CTA SECTION */}
       <Section className="bg-black text-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -469,7 +454,6 @@ export default function Home() {
           <CtaButton size="xl" text="RESGATE SEUS DESCONTOS AGORA" location="final_cta" />
         </div>
       </Section>
-
       {/* 13. FOOTER */}
       <footer className="bg-gray-900 text-gray-400 py-12 px-4 border-t border-gray-800">
         <div className="max-w-6xl mx-auto">
