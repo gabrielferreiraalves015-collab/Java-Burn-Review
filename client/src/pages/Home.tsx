@@ -163,7 +163,7 @@ export default function Home() {
           <BenefitItem icon={ShieldCheck} text="Pode estabilizar açúcar no sangue" />
         </ul>
         <div className="mt-12 text-center">
-          <CtaButton text="Ver todos os benefícios no site" location="benefits" />
+          <CtaButton text="Garantir hoje com desconto" location="benefits" />
         </div>
       </Section>
       {/* 4. HOW IT WORKS -> Moved and renamed to HOW TO USE */}
