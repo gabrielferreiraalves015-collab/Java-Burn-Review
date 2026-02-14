@@ -25,7 +25,7 @@ interface SectionHeaderProps {
 export function SectionHeader({ title, subtitle, center = true, className }: SectionHeaderProps & { className?: string }) {
   return (
     <div className={cn("mb-12", center && "text-center", className)}>
-      <h2 className="text-3xl md:text-5xl font-extrabold mb-4 font-display">
+      <h2 className="text-3xl md:text-5xl font-extrabold mb-4 font-display text-[#ffffff]">
         {title}
       </h2>
       {subtitle && (
