@@ -72,16 +72,16 @@ export default function Home() {
         
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <motion.div {...fadeIn} className="text-left">
-            <div className="inline-block px-4 py-1.5 rounded-full font-bold text-sm mb-6 uppercase tracking-wider bg-[#ffffff] text-[#000000b0]">Análise 2026 Atualizada</div>
+            <div className="inline-block px-4 py-1.5 rounded-full font-bold text-sm mb-6 uppercase tracking-wider bg-[#ffffff] text-[#000000b0]">Updated 2026 Analysis</div>
             <h1 className="text-4xl md:text-6xl font-extrabold text-black leading-[1.1] mb-6 font-display">
-              Review Java Burn
+              Java Burn Review
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
-              Tudo que você precisa saber antes de decidir se este é o suplemento certo para você.
+              Everything you need to know before deciding if this is the right supplement for you.
             </p>
-            <CtaButton size="xl" location="hero" />
+            <CtaButton size="xl" location="hero" text="Order Now" />
             <p className="mt-4 text-sm text-gray-500 flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4" /> Site Oficial verificado e seguro
+              <ShieldCheck className="w-4 h-4" /> Official Site verified and secure
             </p>
           </motion.div>
           
@@ -116,20 +116,20 @@ export default function Home() {
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-8">
             <SectionHeader 
-              title="Java Burn Realmente Funciona?" 
+              title="Does Java Burn Really Work?" 
               center={false}
-              subtitle="Uma abordagem científica para o metabolismo"
+              subtitle="A scientific approach to metabolism"
             />
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                A resposta curta é: <strong>Sim, para a maioria das pessoas.</strong> O mecanismo do Java Burn é baseado em uma ciência simples, mas eficaz: a <span className="text-[#002B5C] font-bold">termogênese nutricional</span>.
+                The short answer is: <strong>Yes, for most people.</strong> The mechanism of Java Burn is based on simple but effective science: <span className="text-[#002B5C] font-bold">nutritional thermogenesis</span>.
               </p>
               <p>
-                Ao contrário de pílulas difíceis de engolir, o Java Burn é um pó sem sabor que se dissolve instantaneamente no seu café. A fórmula foi desenhada especificamente para interagir com a cafeína.
+                Unlike hard-to-swallow pills, Java Burn is a tasteless powder that dissolves instantly in your coffee. The formula was specifically designed to interact with caffeine.
               </p>
               <div className="bg-white p-6 border-l-4 border-[#FFD814] shadow-sm rounded-r-xl">
                 <p className="italic font-medium text-gray-800">
-                  "Os ingredientes ativos 'pegam carona' na velocidade de absorção do café, criando uma janela metabólica onde seu corpo queima gordura de forma mais eficiente durante o dia."
+                  "The active ingredients 'hitch a ride' on the absorption speed of coffee, creating a metabolic window where your body burns fat more efficiently throughout the day."
                 </p>
               </div>
             </div>
@@ -137,44 +137,50 @@ export default function Home() {
           <div className="md:col-span-4 flex flex-col gap-4">
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
               <Flame className="w-12 h-12 text-orange-500 mx-auto mb-3" />
-              <h3 className="font-bold text-xl mb-1">Acelera</h3>
-              <p className="text-sm text-gray-500">O Metabolismo basal</p>
+              <h3 className="font-bold text-xl mb-1">Accelerates</h3>
+              <p className="text-sm text-gray-500">Basal Metabolism</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
               <Battery className="w-12 h-12 text-green-500 mx-auto mb-3" />
-              <h3 className="font-bold text-xl mb-1">Energia</h3>
-              <p className="text-sm text-gray-500">O dia todo sem crash</p>
+              <h3 className="font-bold text-xl mb-1">Energy</h3>
+              <p className="text-sm text-gray-500">All day without crash</p>
             </div>
           </div>
         </div>
       </Section>
       {/* 3. BENEFITS */}
       <Section>
-        <SectionHeader title="Principais Benefícios" subtitle="O que você pode esperar ao usar diariamente" />
-        <ul className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-          <BenefitItem icon={Flame} text="Apoia metabolismo e acelera queima de gordura" />
-          <BenefitItem icon={Battery} text="Energia sustentada sem queda brusca" />
-          <BenefitItem icon={Scale} text="Reduz desejos e ajuda no controle do apetite" />
-          <BenefitItem icon={Coffee} text="Mistura simples no café (sem sabor/tasteless)" />
-          <BenefitItem icon={Brain} text="Pode apoiar foco e clareza mental" />
-          <BenefitItem icon={CheckCircle2} text="Ingredientes 100% naturais e seguros" />
-          <BenefitItem icon={ShieldCheck} text="Pode estabilizar açúcar no sangue" />
-        </ul>
-        <div className="mt-12 text-center">
-          <CtaButton text="Garantir hoje com desconto" location="benefits" />
+        <SectionHeader 
+          title="Key Benefits" 
+          subtitle="What you can expect with daily use" 
+          className="bg-[#064e3b] text-white p-8 rounded-t-xl mb-0"
+        />
+        <div className="bg-white p-8 border-x border-b border-gray-100 rounded-b-xl">
+          <ul className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <BenefitItem icon={Flame} text="Supports metabolism and accelerates fat burning" />
+            <BenefitItem icon={Battery} text="Sustained energy without a sharp drop" />
+            <BenefitItem icon={Scale} text="Reduces cravings and helps in appetite control" />
+            <BenefitItem icon={Coffee} text="Simple mix in coffee (tasteless)" />
+            <BenefitItem icon={Brain} text="Can support focus and mental clarity" />
+            <BenefitItem icon={CheckCircle2} text="100% natural and safe ingredients" />
+            <BenefitItem icon={ShieldCheck} text="Can stabilize blood sugar" />
+          </ul>
+          <div className="mt-12 text-center">
+            <CtaButton text="Get it today with discount" location="benefits" />
+          </div>
         </div>
       </Section>
       {/* 4. HOW IT WORKS -> Moved and renamed to HOW TO USE */}
       {/* 5. INGREDIENTS */}
       <Section>
-        <SectionHeader title="Ingredientes Poderosos" subtitle="Prova técnica da eficácia" />
+        <SectionHeader title="Powerful Ingredients" subtitle="Technical proof of effectiveness" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <IngredientItem name="Chromium" desc="Essencial para regular o açúcar no sangue e reduzir drasticamente os desejos por doces." />
-          <IngredientItem name="L-Carnitine" desc="Ajuda a transportar ácidos graxos para as células serem queimados como energia." />
-          <IngredientItem name="L-Theanine" desc="Aminoácido que neutraliza o nervosismo da cafeína, promovendo foco calmo." />
-          <IngredientItem name="Vitamina B6 + B12" desc="Complexo B essencial para manter o metabolismo energético ativo o dia todo." />
-          <IngredientItem name="Green Tea Extract" desc="Rico em EGCG, um antioxidante potente conhecido por efeitos termogênicos." />
-          <IngredientItem name="Chlorogenic Acid" desc="Composto encontrado no café verde que ajuda a reduzir a absorção de carboidratos." />
+          <IngredientItem name="Chromium" desc="Essential for regulating blood sugar and drastically reducing sweet cravings." />
+          <IngredientItem name="L-Carnitine" desc="Helps transport fatty acids into cells to be burned as energy." />
+          <IngredientItem name="L-Theanine" desc="Amino acid that neutralizes caffeine jitters, promoting calm focus." />
+          <IngredientItem name="Vitamin B6 + B12" desc="Essential B complex to keep energy metabolism active all day." />
+          <IngredientItem name="Green Tea Extract" desc="Rich in EGCG, a potent antioxidant known for thermogenic effects." />
+          <IngredientItem name="Chlorogenic Acid" desc="Compound found in green coffee that helps reduce carbohydrate absorption." />
         </div>
       </Section>
       {/* 6. SIDE EFFECTS */}
@@ -184,31 +190,31 @@ export default function Home() {
             <AlertCircle className="w-12 h-12 text-amber-500" />
           </div>
           <div>
-            <h2 className="text-2xl font-bold mb-4">Possíveis Efeitos Colaterais (Transparência)</h2>
+            <h2 className="text-2xl font-bold mb-4">Possible Side Effects (Transparency)</h2>
             <div className="space-y-4 text-gray-700">
-              <p>O Java Burn é formulado com ingredientes naturais, mas prezamos pela transparência total:</p>
+              <p>Java Burn is formulated with natural ingredients, but we value total transparency:</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Pode causar leve agitação se tomado em jejum por pessoas muito sensíveis.</li>
-                <li>Como potencializa a cafeína, evite tomar tarde do dia para não atrapalhar o sono.</li>
-                <li>Algumas pessoas relatam leve desconforto gastrointestinal nos primeiros dias de adaptação.</li>
+                <li>May cause slight jitters if taken on an empty stomach by very sensitive individuals.</li>
+                <li>As it enhances caffeine, avoid taking it late in the day to not disturb sleep.</li>
+                <li>Some people report mild gastrointestinal discomfort in the first few days of adaptation.</li>
               </ul>
-              <p className="text-sm text-gray-500 mt-4 italic">Nota: Resultados variam e dependem de hábitos e sensibilidade individual.</p>
+              <p className="text-sm text-gray-500 mt-4 italic">Note: Results vary and depend on habits and individual sensitivity.</p>
             </div>
           </div>
         </div>
       </Section>
       {/* HOW TO USE (formerly HOW IT WORKS) */}
       <Section className="bg-white">
-        <SectionHeader title="Como Usar" subtitle="Simples, Rápido e Eficaz" center={true} />
+        <SectionHeader title="How To Use" subtitle="Simple, Fast and Effective" center={true} />
         <div className="grid md:grid-cols-4 gap-8 relative">
           {/* Connector Line */}
           <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-200 -z-0" />
           
           {[
-            { step: "01", title: "Misture", desc: "Adicione um sachê de Java Burn ao seu café matinal." },
-            { step: "02", title: "Ative", desc: "A fórmula se dissolve instantaneamente e sem sabor." },
-            { step: "03", title: "Acelere", desc: "Seu metabolismo entra em modo de queima de gordura." },
-            { step: "04", title: "Queime", desc: "Desfrute de energia o dia todo enquanto seu corpo trabalha." }
+            { step: "01", title: "Mix", desc: "Add one Java Burn sachet to your morning coffee." },
+            { step: "02", title: "Activate", desc: "The formula dissolves instantly and is tasteless." },
+            { step: "03", title: "Accelerate", desc: "Your metabolism enters fat-burning mode." },
+            { step: "04", title: "Burn", desc: "Enjoy energy all day while your body works." }
           ].map((item, idx) => (
             <motion.div 
               key={idx}
@@ -229,14 +235,14 @@ export default function Home() {
       </Section>
       {/* 7. PROS & CONS */}
       <Section>
-        <SectionHeader title="Prós e Contras" subtitle="Uma visão equilibrada" />
+        <SectionHeader title="Pros and Cons" subtitle="A balanced view" />
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-green-50/50 p-8 rounded-2xl border border-green-100">
             <h3 className="text-2xl font-bold text-green-800 mb-6 flex items-center gap-2">
-              <CheckCircle2 className="w-8 h-8" /> Prós
+              <CheckCircle2 className="w-8 h-8" /> Pros
             </h3>
             <ul className="space-y-4">
-              {["Mistura instantânea no café", "Ingredientes 100% naturais", "Suporte real ao metabolismo", "Pode reduzir o apetite significativamente", "Energia sustentada sem crash", "Fórmula totalmente sem sabor"].map((pro, i) => (
+              {["Instant coffee mix", "100% natural ingredients", "Real metabolism support", "Can significantly reduce appetite", "Sustained energy without crash", "Totally tasteless formula"].map((pro, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
                   <span className="text-gray-700">{pro}</span>
@@ -247,14 +253,14 @@ export default function Home() {
           
           <div className="bg-red-50/50 p-8 rounded-2xl border border-red-100">
             <h3 className="text-2xl font-bold text-red-800 mb-6 flex items-center gap-2">
-              <X className="w-8 h-8" /> Contras
+              <X className="w-8 h-8" /> Cons
             </h3>
             <ul className="space-y-4">
               {[
-                { text: "Disponível apenas no site oficial", highlight: true },
-                { text: "Pode demorar algumas semanas para notar efeito visível", highlight: false },
-                { text: "Requer consumo diário de café para melhor efeito", highlight: false },
-                { text: "Estoques limitados frequentes", highlight: false }
+                { text: "Available only on the official website", highlight: true },
+                { text: "May take a few weeks to notice visible effect", highlight: false },
+                { text: "Requires daily coffee consumption for best effect", highlight: false },
+                { text: "Frequent limited stocks", highlight: false }
               ].map((con, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <AlertCircle className="w-5 h-5 text-red-500 mt-0.5 shrink-0" />
@@ -267,47 +273,54 @@ export default function Home() {
       </Section>
       {/* 8. COMPARISON TABLE */}
       <Section className="bg-slate-50">
-        <SectionHeader title="Comparativo" center={true} />
+        <SectionHeader title="Comparison" center={true} />
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-4xl mx-auto border border-gray-100">
           <div className="grid grid-cols-3 text-white py-6 text-center font-bold text-lg md:text-xl bg-[#24272bde]">
-            <div className="flex items-center justify-center pl-4 text-left md:text-center text-sm md:text-lg">Critério</div>
+            <div className="flex items-center justify-center pl-4 text-left md:text-center text-sm md:text-lg">Criterion</div>
             <div className="flex flex-col items-center justify-center">
               <span>Java Burn</span>
               <div className="h-1 w-12 bg-[#FFD814] rounded mt-1"></div>
             </div>
             <div className="flex flex-col items-center justify-center opacity-70">
-              <span className="text-sm md:text-lg">Outros</span>
-              <span className="text-xs font-normal">Genéricos</span>
+              <span className="text-sm md:text-lg">Others</span>
+              <span className="text-xs font-normal">Generics</span>
             </div>
           </div>
           <div className="p-2 md:p-6">
-            <ComparisonRow label="Mistura no café" javaBurn={true} generic={false} />
-            <ComparisonRow label="Fórmula Natural" javaBurn={true} generic={false} />
-            <ComparisonRow label="Energia Sustentada" javaBurn={true} generic={false} />
-            <ComparisonRow label="Foco Mental" javaBurn={true} generic={false} />
-            <ComparisonRow label="Garantia de 60 Dias" javaBurn={true} generic={false} />
+            <ComparisonRow label="Mix in coffee" javaBurn={true} generic={false} />
+            <ComparisonRow label="Natural Formula" javaBurn={true} generic={false} />
+            <ComparisonRow label="Sustained Energy" javaBurn={true} generic={false} />
+            <ComparisonRow label="Mental Focus" javaBurn={true} generic={false} />
+            <ComparisonRow label="60-Day Guarantee" javaBurn={true} generic={false} />
           </div>
         </div>
       </Section>
       {/* 9. REVIEWS */}
       <Section className="bg-white">
-        <SectionHeader title="O que dizem os clientes?" subtitle="Baseado em relatos reais" center={true} />
-        <div className="grid md:grid-cols-3 gap-8">
-          <ReviewCard 
-            name="Sarah M." 
-            location="New York, NY" 
-            content="Eu estava cética, mas depois de 3 semanas, minhas calças estão caindo. A energia é incrível, não sinto aquela moleza depois do almoço."
-          />
-          <ReviewCard 
-            name="John D." 
-            location="Chicago, IL" 
-            content="A melhor parte é que não muda o gosto do café. Perdi peso sem ter que mudar minha rotina inteira. Simplesmente funciona."
-          />
-          <ReviewCard 
-            name="Emily R." 
-            location="Austin, TX" 
-            content="Sinto meu foco muito melhor no trabalho. É como se meu café tivesse recebido um upgrade. Recomendo fortemente."
-          />
+        <SectionHeader 
+          title="What do customers say?" 
+          subtitle="Based on real reports" 
+          center={true} 
+          className="bg-[#064e3b] text-white p-8 rounded-t-xl mb-0"
+        />
+        <div className="bg-white p-8 border-x border-b border-gray-100 rounded-b-xl">
+          <div className="grid md:grid-cols-3 gap-8">
+            <ReviewCard 
+              name="Sarah M." 
+              location="New York, NY" 
+              content="I was skeptical, but after 3 weeks, my pants are falling off. The energy is amazing, I don't feel that post-lunch slump."
+            />
+            <ReviewCard 
+              name="John D." 
+              location="Chicago, IL" 
+              content="The best part is it doesn't change the taste of coffee. I lost weight without having to change my entire routine. It simply works."
+            />
+            <ReviewCard 
+              name="Emily R." 
+              location="Austin, TX" 
+              content="I feel my focus much better at work. It's like my coffee got an upgrade. Strongly recommend."
+            />
+          </div>
         </div>
       </Section>
       {/* 10. OFFER SPECIAL */}
@@ -316,7 +329,7 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFD814] blur-3xl opacity-20 rounded-full" />
           
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 font-display">
-            Oferta Especial Limitada
+            Limited Special Offer
           </h2>
           
           <div className="max-w-4xl mx-auto mb-10">
@@ -327,11 +340,11 @@ export default function Home() {
             />
           </div>
 
-          <CtaButton size="xl" text="Escolha sua oferta oficial com desconto" location="pricing" />
+          <CtaButton size="xl" text="Choose your official discount offer" location="pricing" />
 
           <div className="max-w-2xl mx-auto mt-10 bg-orange-100 border-2 border-black p-6 rounded-xl text-left">
             <p className="text-lg font-bold text-black text-center">
-              <span className="text-red-600">ATENÇÃO:</span> Os estoques do sérum Java Burn são limitados. Garanta já o seu produto reservado antes que o desconto expire!
+              <span className="text-red-600">ATTENTION:</span> Java Burn stocks are limited. Secure your reserved product now before the discount expires!
             </p>
           </div>
         </div>
@@ -346,29 +359,33 @@ export default function Home() {
               className="w-full h-full object-contain"
             />
           </div>
-          <h3 className="font-bold mb-6 font-display text-[#ffffff] text-[39px]">Garantia de reembolso de 60 dias do Java Burn™</h3>
+          <h3 className="font-bold mb-6 font-display text-[#ffffff] text-[39px]">Java Burn™ 60-Day Money Back Guarantee</h3>
           <div className="text-lg leading-relaxed mb-10 space-y-4 max-w-2xl">
             <p>
-              O suplemento Java Burn estará disponível para você testar por dois meses. Caso esteja entre os 0,5% que não ficarem satisfeitos, poderá solicitar o reembolso TOTAL.
+              The Java Burn supplement will be available for you to test for two months. If you are among the 0.5% who are not satisfied, you can request a FULL refund.
             </p>
             <p className="font-medium text-blue-200">
-              Considere isso um período de teste, caso as coisas não corram como esperado. O Java Burn pode funcionar. Se não funcionar, você pode pedir seu dinheiro de volta.
+              Consider this a trial period if things don't go as expected. Java Burn can work. If it doesn't, you can ask for your money back.
             </p>
           </div>
-          <CtaButton size="xl" text=">> Pegue sua garrafa e veja por si mesmo" location="guarantee" />
+          <CtaButton size="xl" text=">> Grab your bottle and see for yourself" location="guarantee" />
         </div>
       </Section>
       {/* 12. FAQ */}
       <Section className="bg-slate-50">
-        <SectionHeader title="Perguntas Frequentes" center={true} />
-        <div className="max-w-3xl mx-auto">
+        <SectionHeader 
+          title="Frequently Asked Questions" 
+          center={true} 
+          className="bg-black text-white p-8 rounded-t-xl mb-0"
+        />
+        <div className="bg-white p-8 border-x border-b border-gray-100 rounded-b-xl max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {[
-              { q: "O que é Java Burn?", a: "Java Burn é um suplemento natural em pó, sem sabor, projetado para ser misturado ao café. Ele contém ingredientes que, sinergicamente com a cafeína, aceleram o metabolismo." },
-              { q: "Como devo usar?", a: "Simplesmente misture um sachê no seu café da manhã. Ele dissolve instantaneamente e não altera o sabor da bebida." },
-              { q: "É seguro?", a: "Sim, é 100% natural, vegetariano, livre de glúten e produzido em instalações aprovadas pela FDA nos EUA sob padrões rigorosos de esterilidade." },
-              { q: "Quando verei resultados?", a: "Muitos usuários relatam mais energia logo no primeiro dia. Mudanças no peso geralmente são notadas após 3-4 semanas de uso consistente." },
-              { q: "Onde comprar o original?", a: "O Java Burn autêntico é vendido APENAS através do site oficial. Evite Amazon ou eBay para não comprar falsificações." }
+              { q: "What is Java Burn?", a: "Java Burn is a natural, tasteless powder supplement designed to be mixed into coffee. It contains ingredients that, synergistically with caffeine, accelerate metabolism." },
+              { q: "How should I use it?", a: "Simply mix one sachet into your morning coffee. It dissolves instantly and does not change the flavor of the drink." },
+              { q: "Is it safe?", a: "Yes, it is 100% natural, vegetarian, gluten-free, and produced in FDA-approved facilities in the USA under strict sterility standards." },
+              { q: "When will I see results?", a: "Many users report more energy on the first day. Weight changes are usually noticed after 3-4 weeks of consistent use." },
+              { q: "Where to buy the original?", a: "Authentic Java Burn is sold ONLY through the official website. Avoid Amazon or eBay to not buy counterfeits." }
             ].map((item, idx) => (
               <AccordionItem key={idx} value={`item-${idx}`} className="bg-white border border-gray-200 rounded-lg px-4 shadow-sm">
                 <AccordionTrigger className="text-lg font-bold text-gray-800 hover:text-[#002B5C] hover:no-underline py-4">
@@ -385,51 +402,56 @@ export default function Home() {
       {/* NEW SECTION: AFTER FAQ */}
       <Section className="bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">O que acontece depois que eu clico no botão " Comprar agora " do Java Burn Coffee?</h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Após clicar no botão “ Comprar agora ”, logo abaixo deste texto, você será redirecionado para a página de pagamento segura. Basta inserir suas informações e você terá acesso imediato ao café Java Burn.
-          </p>
-          <div className="max-w-sm mx-auto mb-12">
-            <img 
-              src="https://javaburnn-coffee.com/assets/images/javaburncoffee-secure-payment.jpg-614x820.jpg" 
-              alt="Secure Payment" 
-              className="w-full h-auto rounded-xl shadow-lg"
-            />
-          </div>
-          
-          <div className="text-left space-y-8 text-gray-700">
-            <div>
-              <h3 className="text-xl font-bold mb-3">Trata-se de um pagamento único?</h3>
-              <p>
-                Sim. O produto de café Java Burn é uma transação única processada pelo nosso parceiro de pagamentos confiável, o Clickbank. O pagamento é seguro e utiliza a mesma tecnologia de criptografia do Clickbank e dos bancos online. Você nunca será cobrado por nada além do seu consentimento e não há absolutamente nenhum custo oculto.
-              </p>
+          <SectionHeader 
+            title="What happens after I click the 'Buy Now' button on Java Burn Coffee?" 
+            className="bg-red-700 text-white p-8 rounded-t-xl mb-0"
+          />
+          <div className="bg-white p-8 border-x border-b border-gray-100 rounded-b-xl mb-12">
+            <p className="text-lg text-gray-700 mb-8">
+              After clicking the “Buy Now” button, right below this text, you will be redirected to the secure payment page. Simply enter your information and you will have immediate access to Java Burn coffee.
+            </p>
+            <div className="max-w-sm mx-auto mb-12">
+              <img 
+                src="https://javaburnn-coffee.com/assets/images/javaburncoffee-secure-payment.jpg-614x820.jpg" 
+                alt="Secure Payment" 
+                className="w-full h-auto rounded-xl shadow-lg"
+              />
             </div>
+            
+            <div className="text-left space-y-8 text-gray-700">
+              <div>
+                <h3 className="text-xl font-bold mb-3">Is this a one-time payment?</h3>
+                <p>
+                  Yes. Java Burn coffee product is a one-time transaction processed by our trusted payment partner, Clickbank. Payment is secure and uses the same encryption technology as Clickbank and online banks. You will never be charged for anything beyond your consent and there are absolutely no hidden costs.
+                </p>
+              </div>
 
-            <div>
-              <h3 className="text-xl font-bold mb-3">Preços do café Java Burn e como comprar</h3>
-              <p className="mb-4">O Java Burn está disponível apenas em seu site oficial.</p>
-              <ul className="list-disc pl-5 space-y-2 font-medium">
-                <li>Pacote com 1 frasco de café Java Burn: US$ 59 + frete.</li>
-                <li>Pacote com 3 frascos de café Java Burn: US$ 49 + frete grátis e rápido.</li>
-                <li>Pacote com 6 frascos de café Java Burn: US$ 39 + frete grátis e rápido.</li>
-              </ul>
-              <p className="mt-4">
-                Pode haver uma pequena taxa de envio para pedidos de frascos de Java Burn. A empresa oferece garantia de satisfação de 90 dias. Portanto, se o Java Burn não atender às suas expectativas, você pode solicitar um reembolso total. O suplemento alimentar Java Burn é um investimento seguro para uma vida saudável.
-              </p>
-            </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3">Java Burn coffee prices and how to buy</h3>
+                <p className="mb-4">Java Burn is available only on its official website.</p>
+                <ul className="list-disc pl-5 space-y-2 font-medium">
+                  <li>Java Burn Coffee 1 Bottle Pack: $59 + shipping.</li>
+                  <li>Java Burn Coffee 3 Bottle Pack: $49 + free and fast shipping.</li>
+                  <li>Java Burn Coffee 6 Bottle Pack: $39 + free and fast shipping.</li>
+                </ul>
+                <p className="mt-4">
+                  There may be a small shipping fee for Java Burn bottle orders. The company offers a 90-day satisfaction guarantee. So, if Java Burn doesn't meet your expectations, you can request a full refund. Java Burn dietary supplement is a safe investment for a healthy life.
+                </p>
+              </div>
 
-            <div>
-              <h3 className="text-xl font-bold mb-3">Quão seguras estão as informações do meu cartão de crédito no seu site?</h3>
-              <p>
-                Sua privacidade online é uma das nossas maiores prioridades, portanto, não se preocupe com a perda de informações confidenciais ao fazer seu pedido de café Java Burn conosco. Além disso, você pode confiar na excelente reputação e vasta experiência da Clickbank em transações online para garantir a segurança da sua compra.
-              </p>
-            </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3">How secure is my credit card information on your site?</h3>
+                <p>
+                  Your online privacy is one of our top priorities, so don't worry about losing sensitive information when placing your Java Burn coffee order with us. Additionally, you can trust Clickbank's excellent reputation and vast experience in online transactions to ensure the security of your purchase.
+                </p>
+              </div>
 
-            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-              <h3 className="text-xl font-bold mb-3">Política de reembolso:</h3>
-              <p>
-                Se, nos primeiros 60 dias após o recebimento, você não estiver satisfeito com o JavaBurn Coffee, poderá solicitar um reembolso enviando um e-mail para o endereço fornecido dentro da embalagem do produto e reembolsaremos imediatamente o valor total da sua compra, sem perguntas.
-              </p>
+              <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <h3 className="text-xl font-bold mb-3">Refund Policy:</h3>
+                <p>
+                  If, within the first 60 days after receiving, you are not satisfied with JavaBurn Coffee, you can request a refund by sending an email to the address provided inside the product packaging and we will immediately refund your full purchase amount, no questions asked.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -437,7 +459,7 @@ export default function Home() {
       {/* FINAL CTA SECTION */}
       <Section className="bg-black text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 font-display text-white">Não espere mais! Peça já sua garrafa de Java Burn com desconto!</h2>
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 font-display text-white">Don't wait any longer! Order your discounted bottle of Java Burn now!</h2>
           <div className="max-w-xl mx-auto mb-10">
             <img 
               src="https://javaburnn-coffee.com/assets/images/javaburncoffee-best-price.png-1241x1156.png" 
@@ -446,10 +468,10 @@ export default function Home() {
             />
           </div>
           <div className="space-y-4 mb-10">
-            <p className="text-xl line-through opacity-60">Preço normal do JavaBurn: US$ 197 por garrafa</p>
-            <p className="text-4xl font-black text-[#FFD814]">Apenas por: US$ 49 por garrafa</p>
+            <p className="text-xl line-through opacity-60">Regular Java Burn price: $197 per bottle</p>
+            <p className="text-4xl font-black text-[#FFD814]">Only: $49 per bottle</p>
           </div>
-          <CtaButton size="xl" text="RESGATE SEUS DESCONTOS AGORA" location="final_cta" />
+          <CtaButton size="xl" text="REDEEM YOUR DISCOUNTS NOW" location="final_cta" />
         </div>
       </Section>
       {/* 13. FOOTER */}
@@ -459,25 +481,25 @@ export default function Home() {
             <div className="col-span-2">
               <h4 className="text-white font-bold text-xl mb-4 font-display">Java Burn Review</h4>
               <p className="text-sm leading-relaxed max-w-sm">
-                Nossa missão é fornecer análises honestas e detalhadas para ajudar você a tomar decisões informadas sobre sua saúde e bem-estar.
+                Our mission is to provide honest and detailed reviews to help you make informed decisions about your health and well-being.
               </p>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-4">Links Rápidos</h4>
+              <h4 className="text-white font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Início</a></li>
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Como Funciona</a></li>
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Benefícios</a></li>
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Comprar</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Home</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">How It Works</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Benefits</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Buy</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-bold mb-4">Legal</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Termos de Uso</a></li>
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Privacidade</a></li>
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Isenção de Responsabilidade</a></li>
-                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Contato</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Terms of Use</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Privacy</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Disclaimer</a></li>
+                <li><a href="#" className="hover:text-[#FFD814] transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>

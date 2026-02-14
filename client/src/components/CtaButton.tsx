@@ -6,7 +6,7 @@ interface CtaButtonProps {
   location?: string;
 }
 
-export function CtaButton({ size = "default", text = "COMPRAR AGORA", location }: CtaButtonProps) {
+export function CtaButton({ size = "default", text = "BUY NOW", location }: CtaButtonProps) {
   const sizes = {
     default: "h-11 px-8",
     sm: "h-9 px-4",

@@ -22,14 +22,14 @@ interface SectionHeaderProps {
   center?: boolean;
 }
 
-export function SectionHeader({ title, subtitle, center = true }: SectionHeaderProps) {
+export function SectionHeader({ title, subtitle, center = true, className }: SectionHeaderProps & { className?: string }) {
   return (
-    <div className={cn("mb-12", center && "text-center")}>
-      <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 font-display">
+    <div className={cn("mb-12", center && "text-center", className)}>
+      <h2 className="text-3xl md:text-5xl font-extrabold mb-4 font-display">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-xl text-gray-600 font-medium">
+        <p className="text-xl font-medium">
           {subtitle}
         </p>
       )}
